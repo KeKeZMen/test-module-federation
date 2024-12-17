@@ -1,0 +1,24 @@
+services:
+  nginx:
+    build:
+      context: nginx
+      dockerfile: Dockerfile
+    container_name: nginx
+    ports:
+      - 80:80
+
+  header:
+    build:
+      context: header
+      dockerfile: Dockerfile
+    container_name: header
+    ports:
+      - 3001:3001
+
+  main:
+    build:
+      context: main
+      dockerfile: Dockerfile
+    container_name: main
+    ports:
+      - 3000:3000
