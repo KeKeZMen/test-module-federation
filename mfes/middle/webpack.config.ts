@@ -41,8 +41,8 @@ export default () => {
       }),
       new container.ModuleFederationPlugin({
         remotes: {
-          header: "header@http://localhost:3001/remoteEntry.js",
-          footer: "footer@http://localhost:3002/remoteEntry.js",
+          header: "header@https://kekez.ru/header/remoteEntry.js",
+          footer: "footer@https://kekez.ru/footer/remoteEntry.js",
         },
       }),
     ],
