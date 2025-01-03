@@ -1,9 +1,10 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { App, createApp } from "vue";
+import MyApp from "./MyApp.vue";
 
-const app = createApp(App);
+let app: App<Element>;
 
 const mount = (el: Element) => {
+  app = createApp(MyApp);
   app.mount(el);
 };
 

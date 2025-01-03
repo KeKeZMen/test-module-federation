@@ -12,7 +12,7 @@ export default () => {
   const config: Configuration = {
     mode: "development",
 
-    entry: path.resolve("./src/script.ts"),
+    entry: path.resolve("./src/index.ts"),
 
     output: {
       path: path.resolve("public"),
@@ -36,7 +36,7 @@ export default () => {
 
     plugins: [
       new HtmlWebpackPlugin({
-        template: path.resolve("./src/index.html"),
+        template: path.resolve("./index.html"),
         minify: true,
       }),
       new container.ModuleFederationPlugin({
