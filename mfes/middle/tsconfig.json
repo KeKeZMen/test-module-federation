@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ES2020",
     "target": "ES5",
-    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "baseUrl": "."
+    "esModuleInterop": true
   },
   "ts-node": {
     "compilerOptions": {

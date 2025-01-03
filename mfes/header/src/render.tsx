@@ -1,12 +1,11 @@
 import { createRoot, Root } from "react-dom/client";
 
-import Header from "./Header";
+import Header from "./App";
 
 let root: Root;
 
-const mount = (el: HTMLElement) => {
+const mount = (el: Element) => {
   root = createRoot(el);
-
   root.render(<Header />);
 };
 
@@ -14,4 +13,4 @@ const unmount = () => {
   root.unmount();
 };
 
-export default { mount, unmount };
+export { mount, unmount };
