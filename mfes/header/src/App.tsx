@@ -33,7 +33,7 @@ export default function Header() {
       <button
         onClick={() =>
           EventBus.emit("data", {
-            detail: { value: `From react header and inner count ${count}` },
+            detail: { value: `From react header and his inner count ${count}` },
           })
         }
       >

@@ -28,7 +28,9 @@ const handleGlobalIncrement = () => {
 const data = ref("");
 const sendGlobalData = () => {
   EventBus.emit("data", {
-    detail: { value: `From vue footer and inner count ${count.value}` },
+    detail: {
+      value: `From vue footer and his inner count ${count.value}`,
+    },
   });
 };
 
