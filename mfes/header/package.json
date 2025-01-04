@@ -2,8 +2,8 @@
   "name": "header",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve"
+    "build": "webpack --config ./webpack.prod.ts",
+    "dev": "webpack serve --config ./webpack.dev.ts"
   },
   "keywords": [],
   "author": "",
@@ -26,12 +26,11 @@
     "babel-loader": "^9.2.1",
     "html-webpack-plugin": "^5.6.3",
     "react-refresh": "^0.16.0",
-    "react-refresh-typescript": "^2.0.10",
-    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^5.2.0",
+    "webpack-merge": "^6.0.1"
   }
 }

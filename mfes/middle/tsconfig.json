@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "public",
     "noImplicitAny": true,
     "module": "ES2020",
     "target": "ES5",
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "."
   },
   "ts-node": {
     "compilerOptions": {
