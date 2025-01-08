@@ -22,11 +22,9 @@ export default merge<Configuration>(common, {
       },
       shared: {
         react: {
-          eager: true,
           singleton: true,
         },
         "react-dom": {
-          eager: true,
           singleton: true,
         },
       },

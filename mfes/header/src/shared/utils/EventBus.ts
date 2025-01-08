@@ -4,13 +4,13 @@ export class EventBus {
     window.dispatchEvent(new CustomEvent(eventName, details));
   }
 
-  static on(eventName: string, callback: (...args: any) => any) {
+  static on(eventName: string, callback: (event: Event) => any) {
     console.log(`subscribe on ${eventName} event`);
     window.addEventListener(eventName, callback);
   }
 
-  static off(eventName: string, callback: (...args: any) => any) {
-    console.log(`remove ${eventName} event`);
+  static off(eventName: string, callback: (event: Event) => any) {
+    console.log(`remove subscribe on ${eventName} event`);
     window.removeEventListener(eventName, callback);
   }
 }

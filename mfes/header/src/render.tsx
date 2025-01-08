@@ -1,6 +1,6 @@
 import { createRoot, Root } from "react-dom/client";
 
-import Header from "./App";
+import Header from "./app";
 
 let root: Root;
 

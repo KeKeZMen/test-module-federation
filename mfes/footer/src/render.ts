@@ -1,5 +1,5 @@
 import { App, createApp } from "vue";
-import MyApp from "./MyApp.vue";
+import MyApp from "./app/MyApp.vue";
 
 let app: App<Element>;
 

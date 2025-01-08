@@ -22,7 +22,6 @@ export default merge<Configuration>(common, {
       },
       shared: {
         vue: {
-          eager: true,
           singleton: true,
         },
       },
